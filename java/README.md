@@ -65,3 +65,18 @@ On Windows
 ```
 java -cp .;mysql-connector-j-9.0.0.jar Client.java
 ```
+
+## Troubleshooting
+
+1. When executing the command in Step 4 in Windows, you may got this error 
+
+```
+Error: Could not find or load main class Client
+Caused by: java.lang.ClassNotFoundException: client
+```
+
+You can try the command without `.java` extension
+
+```
+java -cp .;mysql-connector-j-9.0.0.jar Client
+```
